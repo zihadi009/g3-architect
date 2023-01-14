@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /*----------------- 
@@ -11,8 +11,9 @@
 -------------------*/
 header {
     width: 100%;
-    height: 100vh;
+    height: 1170px;
     background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 100px;
 }
 
 .navbar-container {
@@ -40,4 +41,43 @@ header {
     font-weight: 500;
     font-size: 18px;
     color: #424242;
+}
+
+.banner-container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+    margin-bottom: 40px;
+}
+
+.banner-description {
+    width: 870px;
+    margin-bottom: 33px;
+}
+
+.banner-button {
+    width: 180px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.banner img{
+    width: 1200px;
 }
