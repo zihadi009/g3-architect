@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /*----------------- 
@@ -305,4 +305,69 @@ h3 {
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+}
+
+/*---------------------------------------------
+     Section four styling of main section 
+ ---------------------------------------------*/
+
+.sponsor-container {
+    width: 1240px;
+    height: 230px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.sponsor-title-container {
+    width: 542px;
+    height: 129px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsor-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.sponsor-description {
+    width: 542px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.sponsor-logo-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sponsor-logo-container img {
+    filter: grayscale(1);
+}
+
+.copyright-container {
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    background: #FFF4E7;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.copyright-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #424242;
 }
