@@ -9,86 +9,85 @@
 /*----------------- 
    Header Styling 
 -------------------*/
-header {
-    width: 100%;
-    height: 1170px;
-    background-color: rgba(255, 144, 14, 0.1);
-    margin-bottom: 100px;
+.header-banner-section-container {
+    background: rgba(255, 144, 14, 0.1);
+    height: 1100px;
+    margin-bottom: 50px;
 }
 
-.navbar-container {
+.navigation-section {
     display: flex;
-    justify-content: space-between;
-    padding: 60px 200px;
     align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .navbar-title {
-    font-weight: 700;
-    font-size: 45px;
-    color: #131313;
+    font-size: 35px;
 }
 
 .lists {
     display: flex;
     list-style: none;
-}
-
-.lists a {
     text-decoration: none;
-    color: black;
-    margin-right: 60px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #424242;
+    gap: 15px;
 }
 
-.banner-container {
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+/*-----------------------------
+    Banner Section Styling 
+ -----------------------------*/
+.banner-section {
+    max-width: 1250px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
 
 .banner-title {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 75px;
-    color: #131313;
-    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .banner-description {
-    width: 870px;
-    margin-bottom: 33px;
+    color: #727272;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .banner-button {
     width: 180px;
     height: 64px;
-    background: #FF900E;
-    border-radius: 8px;
+    background-color: #FF900E;
     border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 20px;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .banner img {
-    width: 1200px;
+    max-width: 1250px;
+    width: 100%;
+    margin-bottom: 200px;
 }
 
 /*------------------------------------------
-    Section one styling of main section 
+    Quick list Section styling of main section 
  -------------------------------------------*/
 .quick-list-container {
     display: flex;
-    width: 1318px;
-    height: 708px;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -96,29 +95,32 @@ header {
 }
 
 .quick-list-pic-container {
+    max-width: 500px;
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-auto-rows: 200px;
+    gap: 10px;
 }
 
 .quick-list-pic-container img {
-    width: 342px;
-    height: 342px;
-    display: grid;
-    grid-template-columns: 30px 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .quick-list {
-    width: 537px;
-    height: 304px;
+    max-width: 550px;
+    width: 50%;
 }
 
 .quick-list-title {
-    width: 468px;
-    height: 106px;
+    max-width: 468px;
+    width: 100%;
+    height: 100%;
     font-weight: 500;
-    font-size: 45px;
-    line-height: 53px;
+    font-size: 35px;
     color: #727272;
     margin-bottom: 24px;
 }
@@ -138,7 +140,8 @@ header {
 }
 
 .quick-list-description {
-    width: 537px;
+    max-width: 537px;
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -157,30 +160,33 @@ header {
     border-radius: 8px;
 }
 
-/*------------------------------------------- 
-     Section two styling of main section 
---------------------------------------------*/
-
+/*------------------------------------------------ 
+    Features container styling of main section 
+--------------------------------------------------*/
 .features-container {
     display: flex;
-    width: 1240px;
-    height: 100vh;
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
     gap: 70px;
     margin-bottom: 200px;
 }
 
 .features-title-container {
-    width: 586px;
-    height: 100vh;
+    max-width: 586px;
+    width: 100%;
+    width: 50%;
 }
 
 .features-main-title {
-    width: 468px;
-    height: 106px;
+    max-width: 468px;
+    width: 100%;
+    height: 100%;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 53px;
     color: #131313;
     padding: 5px 0 24px 15px;
@@ -189,8 +195,9 @@ header {
 }
 
 .features-description {
-    width: 586px;
-    height: 78px;
+    max-width: 586px;
+    width: 100%;
+    height: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -199,8 +206,9 @@ header {
 }
 
 .features-sub-title-container {
-    width: 586px;
-    height: 171px;
+    max-width: 586px;
+    width: 100%;
+    height: 100%;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
@@ -217,8 +225,9 @@ header {
 }
 
 .features-sub-description {
-    width: 514px;
-    height: 78px;
+    max-width: 514px;
+    width: 100%;
+    height: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -226,66 +235,49 @@ header {
 }
 
 .feature-img-container img {
-    width: 600px;
-    height: 100vh;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .feature-img-container button {
-    width: 342px;
-    height: 200px;
+    max-width: 200px;
+    width: 100%;
+    height: 100px;
     background-color: #FF900E;
     border: none;
     border-radius: 8px;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 70px;
-    color: #FFFFFF;
-    padding: 45px 42px;
-    margin-top: -80px;
-    margin-left: -35px;
+    margin-top: -50px;
+    margin-left: -20px;
 }
+
+.feature-button-half {
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.feature-button-other-half {
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
 
 .span-three {
     font-size: 25px;
     color: #FFFFFF;
 }
 
-/*-----------------------------
-     Section extra styling 
- ------------------------------*/
- .extra{
-    width: 1240px;
-    height: 100vh;
-    margin-bottom: 100px;
-    margin: 0 auto;
- }
-
- .architect-title{
-    text-align: center;
-    margin-bottom: 40px;
- }
-
- .architect-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
-
- .architect-img img{
-    height: 60vh;
-    width: 100%;
-    border-radius: 8px;
- }
-
- .architect-steps li{
-    margin-top: 20px;
- }
 /*---------------------------------------------
-    Section three styling of main section 
+    Facts container styling of main section 
  ---------------------------------------------*/
 .facts-conatainer {
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -299,7 +291,8 @@ header {
 }
 
 .facts-description {
-    width: 542px;
+    max-width: 542px;
+    width: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -313,7 +306,8 @@ header {
 
 .facts-icon-title-container {
     margin-left: 50px;
-    width: 241.83px;
+    max-width: 241.83px;
+    width: 100%;
     height: 241.83px;
     padding: 46px 37px 60px 36px;
     border: 1px solid #FF900E;
@@ -321,7 +315,7 @@ header {
     text-align: center;
 }
 
-.facts-icon-title-container:hover{
+.facts-icon-title-container:hover {
     transform: translate(30px, 20px) rotate(20deg);
     transition: 0.5s;
 }
@@ -342,20 +336,54 @@ h3 {
     color: #727272;
 }
 
-/*---------------------------------------------
-     Section four styling of main section 
- ---------------------------------------------*/
-
-.sponsor-container {
-    width: 1240px;
-    height: 230px;
+/*-----------------------------
+     Section extra styling 
+ ------------------------------*/
+.extra {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 
+.architect-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.architect-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.architect-img img {
+    height: 60vh;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.architect-steps li {
+    margin-top: 20px;
+}
+
+/*----------------------------------------------------------
+    Sponsor container section styling of main section 
+ ----------------------------------------------------------*/
+.sponsor-container {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
 .sponsor-title-container {
-    width: 542px;
-    height: 129px;
+    max-width: 542px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -369,8 +397,9 @@ h3 {
 }
 
 .sponsor-description {
-    width: 542px;
-    height: 52px;
+    max-width: 542px;
+    width: 100%;
+    height: 100%;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -388,9 +417,13 @@ h3 {
     filter: grayscale(1);
 }
 
+/*-----------------------
+      Footer styling 
+ ------------------------*/
 .copyright-container {
-    width: 1240px;
-    height: 100px;
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     background: #FFF4E7;
     border-radius: 8px;
@@ -398,6 +431,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
+    padding: 20px;
 }
 
 .copyright-title {
@@ -405,4 +439,95 @@ h3 {
     font-size: 20px;
     line-height: 23px;
     color: #424242;
+}
+
+/*-------------------------------- 
+        Media queries for
+        Mobile devices 
+--------------------------------*/
+@media only screen and (max-width:576px) {
+    .header-banner-section-container {
+        height: 800px;
+    }
+        /* I think no need to do this. Because the navbar is already responsive. */
+    /* .lists{
+        flex-direction: column;
+    } */
+
+    .quick-list-container {
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+        margin-bottom: 300px;
+    }
+
+    .quick-list-pic-container {
+        padding: 20px;
+        max-width: 500px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 900px;
+        gap: 20px;
+    }
+
+    .quick-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .features-container {
+        flex-direction: column;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: -200px;
+    }
+
+    .features-sub-title-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .feature-img-container button {
+        margin-top: 50px;
+        margin-left: 30%;
+        margin-bottom: 50px;
+    }
+
+    .facts-icon-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .facts-conatainer {
+        margin-top: 200px;
+    }
+
+    .architect-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sponsor-container {
+        margin-top: 50px;
+    }
+
+    .sponsor-logo-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .sponsor-description {
+        margin-bottom: 50px;
+    }
+
+    .sponsor-logo-container {
+        gap: 20px;
+    }
+
+    .copyright-container {
+        text-align: center;
+        padding: 20px;
+    }
 }
